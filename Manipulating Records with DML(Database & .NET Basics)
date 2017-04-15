@@ -1,0 +1,18 @@
+//Database & .NET Basics
+//Manipulating Records with DML 
+
+
+   
+List<Account> acct = new List<Account>();
+Account acc = new Account();
+acc.Name='Test Account';
+acc.Phone='(225)555-8989';
+acc.NumberOfEmployees=10;
+acc.BillingCity='Baton Rouge';
+
+acct.add(acc);
+
+
+// DML statement
+
+Database.SaveResult[] results = Database.insert(acct, false);
